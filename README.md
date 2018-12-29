@@ -3,4 +3,6 @@
 
 A simple tool to help you check the character length of sentences, paragraphs and words. 
 
-Use the information from Characters tow maintain the perfect length for your headlines, titles and line-lengths.
+All you have to do is type. Characters will update in real time, telling you exactly how many characters you've added.
+
+Use the information from Characters to stick to the perfect character lengths for your headlines, titles and line-lengths.
