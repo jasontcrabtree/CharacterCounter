@@ -1,0 +1,35 @@
+#outsidecontainer {
+}
+
+h1 {
+}
+
+textarea {
+  max-width: 80%;
+  margin: 10px;
+  padding: 16px;
+  /*resize: none;*/
+
+  font-size: 1.25rem;
+  line-height: 1.4;
+
+  border: 1px solid #1d303e;
+}
+
+h1,
+h2,
+p,
+g textarea {
+  font-family: "Niramit", sans-serif;
+  color: #1d303e;
+}
+
+p {
+  display: inline;
+  font-size: 1.75rem;
+}
+
+h2 {
+  display: inline;
+  font-size: 3rem;
+}
