@@ -12,7 +12,10 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Niramit"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -22,18 +25,25 @@
       </p>
     <![endif]-->
 
-<div id="outsidecontainer">
-    <h1>Hello</h1>
+    <div id="top-border"></div>
 
-<div>
-    <textarea autofocus rows="6" cols="44" id="textAreaInput" maxlength="500"></textarea>
-</div>
+    <div id="outsidecontainer">
+      <h1>Type, write or paste</h1>
 
-<div id="sentence">
-    <p>Total character count: <h2 id="text">0</h2></p>
-</div>
+      <div>
+        <textarea
+          autofocus
+          rows="6"
+          cols="44"
+          id="textAreaInput"
+          maxlength="500"
+        ></textarea>
+      </div>
 
-</div>
+      <div id="sentence">
+        <p>Number of characters: <span id="number">0</span></p>
+      </div>
+    </div>
 
     <script src="index.js" async defer></script>
   </body>

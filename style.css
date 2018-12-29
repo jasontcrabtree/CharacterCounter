@@ -1,35 +1,56 @@
+#top-border {
+  background: rgb(43, 0, 139);
+  background: linear-gradient(
+    16deg,
+    rgba(43, 0, 139, 1) 21%,
+    rgba(17, 10, 92, 0.9318102240896359) 53%
+  );
+
+  height: 24px;
+  width: 110%;
+  margin-left: -8px;
+  margin-top: -8px;
+}
+
 #outsidecontainer {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 h1 {
+  font-size: 1.8rem;
+  color: #240e84;
 }
 
 textarea {
   max-width: 80%;
   margin: 10px;
   padding: 16px;
-  /*resize: none;*/
 
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   line-height: 1.4;
+  letter-spacing: 0.3px;
 
-  border: 1px solid #1d303e;
+  border: 1px solid #240e84;
+  border-bottom: 2px solid #1e1f63;
 }
 
 h1,
-h2,
+#number,
 p,
-g textarea {
+textarea {
   font-family: "Niramit", sans-serif;
-  color: #1d303e;
 }
 
 p {
   display: inline;
-  font-size: 1.75rem;
+
+  font-size: 1.8rem;
+
+  color: #240e84;
 }
 
-h2 {
+#number {
   display: inline;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
