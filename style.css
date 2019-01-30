@@ -6,7 +6,7 @@
     rgba(17, 10, 92, 0.9318102240896359) 53%
   );
 
-  height: 24px;
+  height: 16px;
   width: 110%;
   margin-left: -8px;
   margin-top: -8px;
@@ -14,7 +14,7 @@
 
 #outsidecontainer {
   padding-left: 5%;
-  padding-right: 15%;
+  padding-right: 5%;
 }
 
 h1 {
@@ -27,6 +27,7 @@ h3 {
   color: black;
   line-height: 1.2;
   font-weight: 400;
+  width: 200px;
 }
 
 #subTitle {
@@ -35,7 +36,7 @@ h3 {
 }
 
 textarea {
-  max-width: 90%;
+  max-width: 100%;
   margin: 24px 0 24px 0;
   padding: 24px;
 
@@ -53,13 +54,13 @@ h3,
 p,
 ul,
 textarea {
-  font-family: "Niramit", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 p {
   font-size: 1.4rem;
   line-height: 1.45;
-
   color: black;
 }
 
@@ -69,5 +70,17 @@ ul {
 
 #number {
   display: inline;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  /* font-feature-settings: "tnum"; */
+  /* font-variant-numeric: slashed-zero; enable */
+  /* font-feature-settings: "zero" on; */
+}
+
+.nicezero {
+  /* font-feature-settings: "zero" 1;
+  font-variant-numeric: slashed-zero; 
+  font-feature-settings: "zero" on; 
+  */
+  font-feature-settings: "tnum";
 }
