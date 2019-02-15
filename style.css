@@ -67,7 +67,6 @@ body {
 	grid-column: 3 / span 3;
 	grid-row-start: 2;
 
-	font-family: SF Pro Display;
 	font-style: normal;
 	font-weight: 900;
 	line-height: 26px;
@@ -99,7 +98,6 @@ body {
 	display: grid;
 	align-items: center;
 
-	font-family: SF Pro Display;
 	font-style: normal;
 	font-weight: 900;
 	line-height: 18px;
@@ -119,7 +117,6 @@ body {
 
 	font-feature-settings: 'tnum';
 
-	font-family: SF Pro Display;
 	font-weight: bold;
 	line-height: 29px;
 
@@ -204,7 +201,6 @@ textarea::placeholder {
 	grid-column: 5 / 6;
 
 	/* Text styling */
-	font-family: SF Pro Display;
 	font-weight: bold;
 	font-size: 16px;
 	text-align: center;
