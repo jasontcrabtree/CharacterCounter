@@ -3,71 +3,98 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
-  <!--<![endif]-->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Niramit"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
+<html class="no-js" lang="en">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Character Counter</title>
+		<meta
+			name="description"
+			content="A simple tool to count exactly how many characters you've entered into the textbox."
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
 
-    <div id="top-border"></div>
+		<meta name="theme-color" content="#08238c" />
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
 
-    <div id="outsidecontainer">
-      <h1>Characters</h1>
+		<div class="gridContainer">
+			<h1 class="mainTitle">Character Counter</h1>
 
-      <p id="subTitle">
-        The easiest way to check character length. Type or paste in your text.
-        Characters does the rest.
-      </p>
+			<p class="pageDescription">
+				A simple tool to quickly and easily check exactly how many characters
+				you're using.
+			</p>
 
-      <!-- <p></p>
-      <ul>
-        Write your ad-copy to the perfect length for Google, Facebook and
-        other online platforms.
-            <li>
-        </li>
-        <li>Check the line-lengths of your designs and typography.</li>
-        <li>Review your article headlines, keeping short and snappy.</li>
-      </ul>
+			<h2 class="characterCountLabel">Characters:</h2>
 
-      <br />
-      <p>
-        One simple step. Type, enter or paste text. Characters will update in
-        real time and do the rest.
-      </p>
+			<span id="number" class="numberCount">0</span>
 
-      -->
+			<div class="textAreaStyle">
+				<label for="textAreaInput" class="textBoxLabel">Textbox:</label>
+				<textarea
+					autofocus
+					rows="14"
+					cols="auto"
+					class="textAreaBox"
+					id="textAreaInput"
+					placeholder="What are you going to say?"
+					alt="Text box to type in characters to be automatically counted"
+				></textarea>
+			</div>
 
-      <div>
-        <textarea
-          autofocus
-          rows="6"
-          cols="50"
-          id="textAreaInput"
-          placeholder="What are you going to say?"
-        ></textarea>
-      </div>
+			<!-- <div class="featureGroup">
+				<h3 class="featureTitle">Features:</h3>
+				<ul class="featureList">
+					<li>Loads quickly</li>
+					<li>Copy-to-clipboard</li>
+					<li>Works offline</li>
+				</ul>
+			</div> -->
 
-      <div id="sentence">
-        <p>Number of characters: <span id="number" class="nicezero">0</span></p>
-      </div>
-    </div>
+			<div class="copyText">
+				<button
+					class="copyTextLayout"
+					type="button"
+					onclick="copyTextFunction()"
+				>
+					Copy Text
+				</button>
+			</div>
 
-    <script src="index.js" async defer></script>
-  </body>
+			<footer class="builtByJason">
+				<p>
+					Built by
+					<a href="https://twitter.com/jasontcrabtree" class="twitterLink"
+						>@jasontcrabtree</a
+					>
+				</p>
+				<p class="platformThanks">
+					Made using
+					<span class="thanksStyling">
+						<a href="https://github.com/jasontcrabtree/CharacterCounter">
+							GitHub</a
+						>
+					</span>
+					and
+					<span class="thanksStyling">
+						<a href="https://netlify.com">
+							Netlify 💙
+						</a>
+					</span>
+				</p>
+			</footer>
+		</div>
+
+		<script src="index.js" async defer></script>
+		<script src="copy.js" async defer></script>
+	</body>
 </html>
