@@ -15,13 +15,30 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="style.css" />
-		
-		
+
 		<!-- Favicon files -->
-		<link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon_package/favicon-16x16.png">
-	<link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="favicon_package/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicon_package/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicon_package/favicon-16x16.png"
+		/>
+		<link
+			rel="mask-icon"
+			href="favicon_package/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
 		<meta name="theme-color" content="#08238c" />
 	</head>
 	<body>
@@ -40,9 +57,24 @@
 				you're using.
 			</p>
 
-			<h2 class="characterCountLabel">Characters:</h2>
+			<h2 class="characterCountLabel mobileSticky stickyBackground">
+				Characters:
+			</h2>
 
-			<span id="number" class="numberCount">0</span>
+			<span id="number" class="numberCount mobileSticky stickyBackground"
+				>0</span
+			>
+
+			<div class="copyText mobileSticky">
+				<button
+					class="copyTextLayout"
+					type="button"
+					onclick="copyTextFunction()"
+					data-text-swap="Copied!"
+				>
+					Copy Text
+				</button>
+			</div>
 
 			<div class="textAreaStyle">
 				<label for="textAreaInput" class="textBoxLabel">Textbox:</label>
@@ -50,6 +82,7 @@
 					autofocus
 					rows="14"
 					cols="auto"
+					type="text"
 					class="textAreaBox"
 					id="textAreaInput"
 					placeholder="What are you going to say?"
@@ -65,16 +98,6 @@
 					<li>Works offline</li>
 				</ul>
 			</div> -->
-
-			<div class="copyText">
-				<button
-					class="copyTextLayout"
-					type="button"
-					onclick="copyTextFunction()"
-				>
-					Copy Text
-				</button>
-			</div>
 
 			<footer class="builtByJason">
 				<p>
@@ -102,5 +125,6 @@
 
 		<script src="index.js" async defer></script>
 		<script src="copy.js" async defer></script>
+		<script src="buttonSuccess.js" async defer></script>
 	</body>
 </html>
