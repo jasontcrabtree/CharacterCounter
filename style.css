@@ -40,6 +40,10 @@ body {
 		width: 100%;
 	}
 
+	.textAreaBox {
+		height: 200px !important;
+	}
+
 	.mobileSticky {
 		position: -webkit-sticky;
 		position: sticky;
