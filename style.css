@@ -43,11 +43,13 @@ body {
 	.mobileSticky {
 		position: -webkit-sticky;
 		position: sticky;
-		top: 16px;
+		top: 0px;
 	}
 
 	.stickyBackground {
 		background-color: #f6f7fb;
+		top: 16px;
+		bottom: 24px;
 	}
 
 	.copyText {
