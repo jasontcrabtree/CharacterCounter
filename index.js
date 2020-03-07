@@ -1,10 +1,22 @@
-var inputElement = document.getElementById('textAreaInput');
+const inputElement = document.querySelector('.textAreaBox');
+const characterCountText = document.querySelector('.numberCount');
+const historyButton = document.querySelector('.clearHistory');
+
 inputElement.addEventListener('keyup', function(e) {
-	theirInput = e.target.value;
-	document.getElementById('number').innerHTML = theirInput.length;
+  userInput = e.target.value;
+  characterCountText.innerHTML = userInput.length;
+
+  // Store
+  localStorage.setItem('userContent', userInput);
 });
 
-// function logChangeToTextArea() {
-//   const textArea = document.querySelector('#textArea').value.length;
-//   console.log(textArea);
-// }
+// Retrieve
+inputElement.innerHTML = localStorage.getItem('userContent');
+
+// Clear storage
+historyButton.addEventListener('click', clearStorage);
+
+function clearStorage() {
+  localStorage.clear();
+  inputElement.innerHTML = '';
+}

@@ -4,74 +4,83 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
-	<!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<!-- Primary Meta Tags -->
-		<title>CharacterCounter</title>
-		<meta name="title" content="CharacterCounter">
-		<meta name="description" content="An ultra-fast tool to check how many characters you've typed">
+    <!-- Primary Meta Tags -->
+    <title>CharacterCounter</title>
+    <meta name="title" content="CharacterCounter">
+    <meta name="description" content="An ultra-fast tool to check how many characters you've typed">
 
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://charactercounter.netlify.com/">
-		<meta property="og:title" content="CharacterCounter">
-		<meta property="og:description" content="An ultra-fast tool to check how many characters you've typed">
-		<meta property="og:image" content="https://charactercounter.netlify.com/ccsocial.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://charactercounter.netlify.com/">
+    <meta property="og:title" content="CharacterCounter">
+    <meta property="og:description" content="An ultra-fast tool to check how many characters you've typed">
+    <meta property="og:image" content="https://charactercounter.netlify.com/ccsocial.png">
 
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content="https://charactercounter.netlify.com/">
-		<meta property="twitter:title" content="CharacterCounter">
-		<meta property="twitter:description" content="An ultra-fast tool to check how many characters you've typed">
-		<meta property="twitter:image" content="https://charactercounter.netlify.com/ccsocial.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://charactercounter.netlify.com/">
+    <meta property="twitter:title" content="CharacterCounter">
+    <meta property="twitter:description" content="An ultra-fast tool to check how many characters you've typed">
+    <meta property="twitter:image" content="https://charactercounter.netlify.com/ccsocial.png">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/style.e308ff8e.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.e308ff8e.css">
 
-		<!-- Favicon files -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.b26c47ee.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.76102f5b.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.087ff5b2.png">
-		<link rel="mask-icon" href="/safari-pinned-tab.628d18e4.svg" color="#5bbad5">
-		<meta name="theme-color" content="#08238c">
-	<script src="/style.e308ff8e.js"></script></head>
-	<body>
-		<!--[if lt IE 7]>
-			<p class="browsehappy">
-				You are using an <strong>outdated</strong> browser. Please
-				<a href="#">upgrade your browser</a> to improve your experience.
-			</p>
-		<![endif]-->
+    <!-- Favicon files -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.b26c47ee.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.76102f5b.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.087ff5b2.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.628d18e4.svg" color="#5bbad5">
+    <meta name="theme-color" content="#08238c">
+  <script src="/style.e308ff8e.js"></script></head>
+  <body class="parent--container">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
 
-		<div class="gridContainer">
-			<h1 class="mainTitle">Character Counter</h1>
+    <div>
+      <header>
+        <h1 class="mainTitle">Character Counter</h1>
 
-			<p class="pageDescription">
-				A simple tool to quickly and easily check exactly how many characters
-				you're using.
-			</p>
+        <p class="pageDescription">
+          A simple tool to quickly count the number of characters in your text.
+          Made by
+          <a href="https://twitter.com/jasontcrabtree" class="twitterLink">@jasontcrabtree</a>
+          for me, and you!
+        </p>
+      </header>
 
-			<h2 class="characterCountLabel mobileSticky stickyBackground">
-				Characters:
-			</h2>
+      <section class="results__section--layout">
+        <h2 class="characterCountLabel ">
+          Characters:
+        </h2>
 
-			<span id="number" class="numberCount mobileSticky stickyBackground">0</span>
+        <span id="number" class="numberCount  ">0</span>
 
-			<div class="copyText mobileSticky">
-				<button class="copyTextLayout" type="button" onclick="copyTextFunction()" data-text-swap="Copied!">
-					Copy Text
-				</button>
-			</div>
+        <div class="copyText ">
+          <button class="copyTextLayout button--style flexGrow" type="button" onclick="copyTextFunction()" data-text-swap="Copied!">
+            Copy Text
+          </button>
+        </div>
+      </section>
 
-			<div class="textAreaStyle">
-				<label for="textAreaInput" class="textBoxLabel">Textbox:</label>
-				<textarea autofocus="" rows="14" cols="auto" type="text" class="textAreaBox" id="textAreaInput" placeholder="What are you going to say?" alt="Text box to type in characters to be automatically counted"></textarea>
-			</div>
+      <div class="textAreaStyle">
+        <label for="textAreaInput" class="textBoxLabel">Textbox:</label>
+        <textarea autofocus="" rows="14" cols="auto" type="text" class="textAreaBox" placeholder="What are you going to say?" alt="Text box to type in characters to be automatically counted"></textarea>
+        <button class="button--style clearHistory clear-history--layout button--destructive">
+          Clear History
+        </button>
+      </div>
 
-			<!-- <div class="featureGroup">
+      <!-- <div class="featureGroup">
 				<h3 class="featureTitle">Features:</h3>
 				<ul class="featureList">
 					<li>Loads quickly</li>
@@ -80,28 +89,31 @@
 				</ul>
 			</div> -->
 
-			<footer class="builtByJason">
-				<p>
-					Built by
-					<a href="https://twitter.com/jasontcrabtree" class="twitterLink">@jasontcrabtree</a>
-				</p>
-				<p class="platformThanks">
-					Made using
-					<span class="thanksStyling">
-						<a href="https://github.com/jasontcrabtree/CharacterCounter">
-							GitHub</a>
-					</span>
-					and
-					<span class="thanksStyling">
-						<a href="https://netlify.com"> Netlify</a>
-						💙
-					</span>
-				</p>
-			</footer>
-		</div>
+      <!--       <footer class="builtByJason">
+        <p>
+          Built by
+          <a href="https://twitter.com/jasontcrabtree" class="twitterLink"
+            >@jasontcrabtree</a
+          >
+        </p>
+        <!--         <p class="platformThanks">
+          Made using
+          <span class="thanksStyling">
+            <a href="https://github.com/jasontcrabtree/CharacterCounter">
+              GitHub</a
+            >
+          </span>
+          and
+          <span class="thanksStyling">
+            <a href="https://netlify.com"> Netlify</a>
+            💙
+          </span>
+        </p>
+      </footer> -->
+    </div>
 
-		<script src="/CharacterCounter.e31bb0bc.js" async="" defer=""></script>
-		<script src="/copy.2d4140e8.js" async="" defer=""></script>
-		<script src="/buttonSuccess.26e93687.js" async="" defer=""></script>
-	</body>
+    <script src="/CharacterCounter.e31bb0bc.js" async="" defer=""></script>
+    <script src="/copy.2d4140e8.js" async="" defer=""></script>
+    <script src="/buttonSuccess.26e93687.js" async="" defer=""></script>
+  </body>
 </html>
