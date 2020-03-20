@@ -13,10 +13,20 @@ inputElement.addEventListener('keyup', function(e) {
 // Retrieve
 inputElement.innerHTML = localStorage.getItem('userContent');
 
+// Set CC Value from local storage
+characterCountText.innerHTML = inputElement.value.length;
+
 // Clear storage
 historyButton.addEventListener('click', clearStorage);
-
 function clearStorage() {
   localStorage.clear();
-  inputElement.innerHTML = '';
+  inputElement.value = '';
+}
+
+function copyTextFunction() {
+  // Select the text field content declared above
+  inputElement.select();
+
+  // Copy the text inside the text field
+  document.execCommand('copy');
 }
