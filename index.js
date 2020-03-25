@@ -30,3 +30,18 @@ function copyTextFunction() {
   // Copy the text inside the text field
   document.execCommand('copy');
 }
+
+// Change copy button text on click
+const copyButton = document.querySelector('.CopyTextButton');
+
+function copyButtonAnimation(e) {
+  const el = e.currentTarget;
+  el.textContent = ' Copied!';
+  el.classList.add('button--bounce');
+  setTimeout(function() {
+    el.classList.remove('button--bounce');
+    el.textContent = 'Copy Text';
+  }, 300);
+}
+
+copyButton.addEventListener('click', copyButtonAnimation);
