@@ -1,16 +1,17 @@
 const inputElement = document.querySelector('.textAreaBox');
 const characterCountText = document.querySelector('.numberCount');
 const historyButton = document.querySelector('.clearHistory');
+const copyButton = document.querySelector('.CopyTextButton');
 
 inputElement.addEventListener('keyup', function(e) {
   userInput = e.target.value;
   characterCountText.innerHTML = userInput.length;
 
-  // Store
+  // Store Local Storage
   localStorage.setItem('userContent', userInput);
 });
 
-// Retrieve
+// Retrieve Local Storage
 inputElement.innerHTML = localStorage.getItem('userContent');
 
 // Set CC Value from local storage
@@ -32,8 +33,6 @@ function copyTextFunction() {
 }
 
 // Change copy button text on click
-const copyButton = document.querySelector('.CopyTextButton');
-
 function copyButtonAnimation(e) {
   const el = e.currentTarget;
   el.textContent = ' Copied!';
@@ -45,3 +44,4 @@ function copyButtonAnimation(e) {
 }
 
 copyButton.addEventListener('click', copyButtonAnimation);
+copyButton.addEventListener('click', copyTextFunction);
