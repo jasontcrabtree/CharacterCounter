@@ -4,7 +4,7 @@ const historyButton = document.querySelector('.clearHistory');
 const copyButton = document.querySelector('.CopyTextButton');
 
 inputElement.addEventListener('keyup', function(e) {
-  userInput = e.target.value;
+  const userInput = e.target.value;
   characterCountText.innerHTML = userInput.length;
 
   // Store Local Storage
@@ -18,7 +18,6 @@ inputElement.innerHTML = localStorage.getItem('userContent');
 characterCountText.innerHTML = inputElement.value.length;
 
 // Clear storage
-historyButton.addEventListener('click', clearStorage);
 function clearStorage() {
   localStorage.clear();
   inputElement.value = '';
@@ -45,3 +44,4 @@ function copyButtonAnimation(e) {
 
 copyButton.addEventListener('click', copyButtonAnimation);
 copyButton.addEventListener('click', copyTextFunction);
+historyButton.addEventListener('click', clearStorage);
